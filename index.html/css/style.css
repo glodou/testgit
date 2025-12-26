@@ -1,0 +1,288 @@
+body{
+    margin: 0;
+    background-color: white;
+    color: black;
+    scroll-behavior: smooth;
+   
+
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    width:100px;
+    border-radius: 10px; 
+    
+}
+.header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(24, 23, 23);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(233, 227, 227);
+  font-weight: bold;
+  
+  
+
+}
+
+.cart a
+ {
+  text-decoration: none;
+  color: rgb(236, 236, 230);
+  font-weight: bold;
+ }
+
+
+ .imgcart 
+ {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 45px;
+  right: 15px;
+
+ }
+ nav a:hover {
+  color: blueviolet;
+  transition-duration: 1s;
+ }
+ .cart a:hover 
+ {
+  color: rgb(204, 184, 8);
+ }
+
+.parallax {
+  height: 100%;
+
+}
+
+main 
+{
+     
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  height: 70;
+  text-align: center;
+}
+
+footer
+{
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(179, 176, 176);
+  color: rgb(27, 32, 32);
+}
+footer a
+{
+  text-decoration:none;
+  color: rgb(29, 36, 139);
+
+}
+footer a:hover
+{
+  text-decoration:underline;
+}
+
+.hero {
+  height: 90vh;
+  background:url(../assets/images/hero-shoes.jpg)center/cover;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  color: rgb(10, 9, 9);
+  position: relative;
+}
+.hero-text h1 {
+  font-size: 100px;
+  margin-bottom: 30px;
+  padding: 50px;
+}
+
+.hero-text p {
+  font-size: 40px;
+  margin-bottom: 50px;
+  padding: 30px;
+  color: rgb(252, 249, 249);
+}
+
+.btn {
+  padding: 15px 30px;
+  background: blueviolet;
+  color: rgb(207, 196, 196);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: rgb(90, 45, 130);
+}
+
+
+.mid-banner {
+  height: 300px;
+  background: linear-gradient(135deg, #111, #444);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+
+/* About */
+
+.about {
+  display: block;
+  padding: 60px 40px;
+  font-size: 20px;
+}
+ 
+.about-hero {
+text-align: center;
+margin-bottom: 60px;
+background :linear-gradient( #a89d9d);
+color: rgb(129, 42, 42);
+padding: 100px;
+border-radius: 0 0 40px 40px;
+
+
+
+}
+.about-hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+
+}
+.about-hero p {
+  font-size: 30px;
+  color: rgb(22, 21, 21);
+}
+
+.about-content{
+  margin:0 auto;
+  max-width: 800px;
+  background :linear-gradient( #b8b1b1);
+color: rgb(51, 43, 43);
+padding: 100px;
+border-radius: 40px;
+margin-top: 80px;
+
+}
+
+.about-content h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+
+}
+.about-content p {
+  line-height: 1.6;
+
+}
+.about-features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.feature {
+  background-color: #e0dede;
+  width: 240px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+ 
+}
+
+
+.feature h3{
+  margin-bottom: 30px;
+}
+
+/* PRODUCTS PAGE */
+
+.products-page {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+
+
+/* Grid layout */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product card */
+.product-card {
+  background-color: #adaaaa;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+/* Product image */
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* Product title */
+.product-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Price */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: blueviolet;
+}
+
+/* Button */
+.product-card button {
+  padding: 12px 25px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product-card button:hover {
+  background-color: rgb(90, 45, 130);
+}
